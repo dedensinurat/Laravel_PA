@@ -1,0 +1,85 @@
+ /* img profile guru */
+ .img-profile {
+     width: 200px;
+     height: 170px;
+     /* Sesuaikan tinggi gambar sesuai kebutuhan */
+ }
+
+ .user-card {
+     border: none;
+     border-radius: 15px;
+     overflow: hidden;
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .user-card:hover {
+     transform: translateY(-9px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .card-img-top {
+     object-fit: cover;
+     height: 200px;
+ }
+
+ .text-uppercase {
+     text-transform: uppercase;
+ }
+
+
+ @media screen and (max-width: 400px) {
+     .btn-group {
+         display: block;
+     }
+
+     .btn {
+         width: 100%;
+         margin-bottom: 10px;
+         /* untuk memberikan jarak antar tombol */
+     }
+ }
+
+
+
+
+ 
+
+ 
+/* Gaya untuk navbar */
+.navbar-nav-cus {
+    display: flex;
+    justify-content: flex-start; /* Membuat link kelas tersebar di sepanjang navbar */
+    background-color: rgb(224, 224, 224);
+}
+
+.nav-item-cus {
+    list-style: none;
+}
+
+.nav-link-cus {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transisi warna latar belakang dan warna teks */
+    text-decoration: none;
+    color: black; /* Warna teks link */
+}
+
+.nav-link-cus:hover {
+    text-decoration: none;
+    background-color: #afaeae; /* Warna latar belakang saat hover */
+    color: #333; /* Warna teks saat hover */
+}
+
+.nav-link-cus.active {
+    text-decoration: none;
+    background-color: #afaeae; /* Warna latar belakang saat hover */
+    color: #333; /* Warna teks saat hover */
+}
+
+.kelas-details {
+    border: 1px solid #ced4da; /* Garis tepi konten */
+    border-radius: 5px;
+    background-color: #fff; /* Warna latar belakang konten */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan konten */
+}
+

@@ -1,0 +1,69 @@
+.bg-info-subtle {
+    background-color: #70B4F3;
+}
+
+.bg-primary-cus {
+    background-color: #110DC5;
+}
+
+.bg-nav-cus {
+    background-color: #405CD8;
+}
+
+
+
+.content {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    transition: ease-out 0.3s;
+    color: #f8f9fa;
+    font-size: 16px;
+    box-shadow: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #343a40;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item:hover .nav-link::before {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color: #9abcdf;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    border-radius: 25px;
+}
+
+.navbar-nav .nav-item .nav-link.no-hover:hover {
+    color: #f8f9fa;
+    background-color: transparent;
+    box-shadow: none;
+    transform: none;
+}
+
+
+
+/* Style untuk dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
